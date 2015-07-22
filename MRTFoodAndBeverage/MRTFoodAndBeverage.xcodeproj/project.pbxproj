@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F629F0151B5E55B0007B25C5 /* FoodMenu.plist in Resources */ = {isa = PBXBuildFile; fileRef = F629F0141B5E55B0007B25C5 /* FoodMenu.plist */; };
+		F6B1DA881B594301005D52BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B1DA871B594301005D52BC /* main.m */; };
+		F6B1DA8B1B594301005D52BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B1DA8A1B594301005D52BC /* AppDelegate.m */; };
+		F6B1DA911B594301005D52BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6B1DA8F1B594301005D52BC /* Main.storyboard */; };
+		F6B1DA931B594301005D52BC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6B1DA921B594301005D52BC /* Images.xcassets */; };
+		F6B1DA961B594301005D52BC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6B1DA941B594301005D52BC /* LaunchScreen.xib */; };
+		F6B1DAA21B594301005D52BC /* MRTFoodAndBeverageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B1DAA11B594301005D52BC /* MRTFoodAndBeverageTests.m */; };
+		F6B1DAAE1B5943C5005D52BC /* MRTFoodServiceRootTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B1DAAD1B5943C5005D52BC /* MRTFoodServiceRootTableViewController.m */; };
+		F6B1DAB41B59446E005D52BC /* MRTFood&Beverage.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B1DAB31B59446E005D52BC /* MRTFood&Beverage.m */; };
+		F6B1DAB71B5945E6005D52BC /* MRTServiceMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B1DAB61B5945E6005D52BC /* MRTServiceMenuTableViewController.m */; };
+		F6B1DABB1B595439005D52BC /* MRTDetailMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B1DABA1B595439005D52BC /* MRTDetailMenuTableViewController.m */; };
+		F6D3E9DD1B5E8C2A000FA9FA /* summaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D3E9DC1B5E8C2A000FA9FA /* summaryViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F6B1DA9C1B594301005D52BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6B1DA7A1B594301005D52BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6B1DA811B594301005D52BC;
+			remoteInfo = MRTFoodAndBeverage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F629F0141B5E55B0007B25C5 /* FoodMenu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FoodMenu.plist; sourceTree = "<group>"; };
+		F6B1DA821B594301005D52BC /* MRTFoodAndBeverage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MRTFoodAndBeverage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6B1DA861B594301005D52BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6B1DA871B594301005D52BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F6B1DA891B594301005D52BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F6B1DA8A1B594301005D52BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F6B1DA901B594301005D52BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F6B1DA921B594301005D52BC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F6B1DA951B594301005D52BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F6B1DA9B1B594301005D52BC /* MRTFoodAndBeverageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MRTFoodAndBeverageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6B1DAA01B594301005D52BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6B1DAA11B594301005D52BC /* MRTFoodAndBeverageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRTFoodAndBeverageTests.m; sourceTree = "<group>"; };
+		F6B1DAAC1B5943C5005D52BC /* MRTFoodServiceRootTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRTFoodServiceRootTableViewController.h; sourceTree = "<group>"; };
+		F6B1DAAD1B5943C5005D52BC /* MRTFoodServiceRootTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRTFoodServiceRootTableViewController.m; sourceTree = "<group>"; };
+		F6B1DAB21B59446E005D52BC /* MRTFood&Beverage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MRTFood&Beverage.h"; sourceTree = "<group>"; };
+		F6B1DAB31B59446E005D52BC /* MRTFood&Beverage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MRTFood&Beverage.m"; sourceTree = "<group>"; };
+		F6B1DAB51B5945E6005D52BC /* MRTServiceMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRTServiceMenuTableViewController.h; sourceTree = "<group>"; };
+		F6B1DAB61B5945E6005D52BC /* MRTServiceMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRTServiceMenuTableViewController.m; sourceTree = "<group>"; };
+		F6B1DAB91B595439005D52BC /* MRTDetailMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRTDetailMenuTableViewController.h; sourceTree = "<group>"; };
+		F6B1DABA1B595439005D52BC /* MRTDetailMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRTDetailMenuTableViewController.m; sourceTree = "<group>"; };
+		F6D3E9DB1B5E8C2A000FA9FA /* summaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = summaryViewController.h; sourceTree = "<group>"; };
+		F6D3E9DC1B5E8C2A000FA9FA /* summaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = summaryViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6B1DA7F1B594301005D52BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6B1DA981B594301005D52BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F6B1DA791B594301005D52BC = {
+			isa = PBXGroup;
+			children = (
+				F6B1DA841B594301005D52BC /* MRTFoodAndBeverage */,
+				F6B1DA9E1B594301005D52BC /* MRTFoodAndBeverageTests */,
+				F6B1DA831B594301005D52BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F6B1DA831B594301005D52BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6B1DA821B594301005D52BC /* MRTFoodAndBeverage.app */,
+				F6B1DA9B1B594301005D52BC /* MRTFoodAndBeverageTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6B1DA841B594301005D52BC /* MRTFoodAndBeverage */ = {
+			isa = PBXGroup;
+			children = (
+				F6B1DAB81B5947C5005D52BC /* Resources */,
+				F6B1DAB11B5943FB005D52BC /* Model */,
+				F6B1DA921B594301005D52BC /* Images.xcassets */,
+				F6B1DA941B594301005D52BC /* LaunchScreen.xib */,
+				F6B1DA8F1B594301005D52BC /* Main.storyboard */,
+				F6B1DAB01B5943E1005D52BC /* Resources */,
+				F6B1DA851B594301005D52BC /* Supporting Files */,
+				F6B1DAAF1B5943D0005D52BC /* View Controller */,
+			);
+			path = MRTFoodAndBeverage;
+			sourceTree = "<group>";
+		};
+		F6B1DA851B594301005D52BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6B1DAAB1B594395005D52BC /* AppDelegate */,
+				F629F0141B5E55B0007B25C5 /* FoodMenu.plist */,
+				F6B1DA861B594301005D52BC /* Info.plist */,
+				F6B1DA871B594301005D52BC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6B1DA9E1B594301005D52BC /* MRTFoodAndBeverageTests */ = {
+			isa = PBXGroup;
+			children = (
+				F6B1DAA11B594301005D52BC /* MRTFoodAndBeverageTests.m */,
+				F6B1DA9F1B594301005D52BC /* Supporting Files */,
+			);
+			path = MRTFoodAndBeverageTests;
+			sourceTree = "<group>";
+		};
+		F6B1DA9F1B594301005D52BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6B1DAA01B594301005D52BC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6B1DAAB1B594395005D52BC /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				F6B1DA891B594301005D52BC /* AppDelegate.h */,
+				F6B1DA8A1B594301005D52BC /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		F6B1DAAF1B5943D0005D52BC /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F6B1DAAC1B5943C5005D52BC /* MRTFoodServiceRootTableViewController.h */,
+				F6B1DAAD1B5943C5005D52BC /* MRTFoodServiceRootTableViewController.m */,
+				F6B1DAB51B5945E6005D52BC /* MRTServiceMenuTableViewController.h */,
+				F6B1DAB61B5945E6005D52BC /* MRTServiceMenuTableViewController.m */,
+				F6B1DAB91B595439005D52BC /* MRTDetailMenuTableViewController.h */,
+				F6B1DABA1B595439005D52BC /* MRTDetailMenuTableViewController.m */,
+				F6D3E9DB1B5E8C2A000FA9FA /* summaryViewController.h */,
+				F6D3E9DC1B5E8C2A000FA9FA /* summaryViewController.m */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		F6B1DAB01B5943E1005D52BC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F6B1DAB11B5943FB005D52BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F6B1DAB21B59446E005D52BC /* MRTFood&Beverage.h */,
+				F6B1DAB31B59446E005D52BC /* MRTFood&Beverage.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F6B1DAB81B5947C5005D52BC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6B1DA811B594301005D52BC /* MRTFoodAndBeverage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6B1DAA51B594301005D52BC /* Build configuration list for PBXNativeTarget "MRTFoodAndBeverage" */;
+			buildPhases = (
+				F6B1DA7E1B594301005D52BC /* Sources */,
+				F6B1DA7F1B594301005D52BC /* Frameworks */,
+				F6B1DA801B594301005D52BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MRTFoodAndBeverage;
+			productName = MRTFoodAndBeverage;
+			productReference = F6B1DA821B594301005D52BC /* MRTFoodAndBeverage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F6B1DA9A1B594301005D52BC /* MRTFoodAndBeverageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6B1DAA81B594301005D52BC /* Build configuration list for PBXNativeTarget "MRTFoodAndBeverageTests" */;
+			buildPhases = (
+				F6B1DA971B594301005D52BC /* Sources */,
+				F6B1DA981B594301005D52BC /* Frameworks */,
+				F6B1DA991B594301005D52BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6B1DA9D1B594301005D52BC /* PBXTargetDependency */,
+			);
+			name = MRTFoodAndBeverageTests;
+			productName = MRTFoodAndBeverageTests;
+			productReference = F6B1DA9B1B594301005D52BC /* MRTFoodAndBeverageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6B1DA7A1B594301005D52BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Vinay Ponna";
+				TargetAttributes = {
+					F6B1DA811B594301005D52BC = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					F6B1DA9A1B594301005D52BC = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = F6B1DA811B594301005D52BC;
+					};
+				};
+			};
+			buildConfigurationList = F6B1DA7D1B594301005D52BC /* Build configuration list for PBXProject "MRTFoodAndBeverage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F6B1DA791B594301005D52BC;
+			productRefGroup = F6B1DA831B594301005D52BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6B1DA811B594301005D52BC /* MRTFoodAndBeverage */,
+				F6B1DA9A1B594301005D52BC /* MRTFoodAndBeverageTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6B1DA801B594301005D52BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6B1DA911B594301005D52BC /* Main.storyboard in Resources */,
+				F629F0151B5E55B0007B25C5 /* FoodMenu.plist in Resources */,
+				F6B1DA961B594301005D52BC /* LaunchScreen.xib in Resources */,
+				F6B1DA931B594301005D52BC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6B1DA991B594301005D52BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6B1DA7E1B594301005D52BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6B1DA8B1B594301005D52BC /* AppDelegate.m in Sources */,
+				F6B1DABB1B595439005D52BC /* MRTDetailMenuTableViewController.m in Sources */,
+				F6D3E9DD1B5E8C2A000FA9FA /* summaryViewController.m in Sources */,
+				F6B1DAAE1B5943C5005D52BC /* MRTFoodServiceRootTableViewController.m in Sources */,
+				F6B1DAB71B5945E6005D52BC /* MRTServiceMenuTableViewController.m in Sources */,
+				F6B1DA881B594301005D52BC /* main.m in Sources */,
+				F6B1DAB41B59446E005D52BC /* MRTFood&Beverage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6B1DA971B594301005D52BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6B1DAA21B594301005D52BC /* MRTFoodAndBeverageTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F6B1DA9D1B594301005D52BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6B1DA811B594301005D52BC /* MRTFoodAndBeverage */;
+			targetProxy = F6B1DA9C1B594301005D52BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F6B1DA8F1B594301005D52BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6B1DA901B594301005D52BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F6B1DA941B594301005D52BC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6B1DA951B594301005D52BC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F6B1DAA31B594301005D52BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F6B1DAA41B594301005D52BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F6B1DAA61B594301005D52BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MRTFoodAndBeverage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F6B1DAA71B594301005D52BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MRTFoodAndBeverage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F6B1DAA91B594301005D52BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MRTFoodAndBeverageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MRTFoodAndBeverage.app/MRTFoodAndBeverage";
+			};
+			name = Debug;
+		};
+		F6B1DAAA1B594301005D52BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MRTFoodAndBeverageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MRTFoodAndBeverage.app/MRTFoodAndBeverage";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6B1DA7D1B594301005D52BC /* Build configuration list for PBXProject "MRTFoodAndBeverage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6B1DAA31B594301005D52BC /* Debug */,
+				F6B1DAA41B594301005D52BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6B1DAA51B594301005D52BC /* Build configuration list for PBXNativeTarget "MRTFoodAndBeverage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6B1DAA61B594301005D52BC /* Debug */,
+				F6B1DAA71B594301005D52BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6B1DAA81B594301005D52BC /* Build configuration list for PBXNativeTarget "MRTFoodAndBeverageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6B1DAA91B594301005D52BC /* Debug */,
+				F6B1DAAA1B594301005D52BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F6B1DA7A1B594301005D52BC /* Project object */;
+}
