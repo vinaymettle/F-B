@@ -18,9 +18,25 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.dateTimeLabel.text = [self presentDate];
+   }
+
+
+- (NSString *)presentDate
+{
+    NSDate *now = [NSDate date];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateStyle:NSDateFormatterShortStyle];
+    [formatter setTimeStyle:NSDateFormatterShortStyle];
+//    [formatter setTimeZone:[NSTimeZone timeZoneWithName:@"Australia/Sydney"]];
+//    NSLog(@"%@",[formatter stringFromDate:now]); //--> 9/9/11 11:54 PM
+//    [formatter setTimeZone:[NSTimeZone timeZoneWithName:@"Europe/Paris"]];
+    NSLog(@"%@",[formatter stringFromDate:now]);
+    
+    NSString *date = [formatter stringFromDate:now];
+
+    return date;
 }
-
-
 
 
 - (void)didReceiveMemoryWarning {

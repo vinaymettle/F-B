@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>1001</key>
+	<dict>
+		<key>Appetizer</key>
+		<dict>
+			<key>Items</key>
+			<array>
+				<dict>
+					<key>Selection</key>
+					<array/>
+					<key>name</key>
+					<string>Buffalo Wings</string>
+					<key>id</key>
+					<string>200001</string>
+					<key>price</key>
+					<string>14</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Chilled Shrimp and Crab</string>
+					<key>id</key>
+					<string>200002</string>
+					<key>price</key>
+					<string>10</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Italian MeatBall</string>
+					<key>id</key>
+					<string>200003</string>
+					<key>price</key>
+					<string>9</string>
+				</dict>
+			</array>
+		</dict>
+		<key>Soups and Salad</key>
+		<dict>
+			<key>Items</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Crab and Corn Chowder</string>
+					<key>id</key>
+					<string>300001</string>
+					<key>price</key>
+					<string>10</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Seasonal Soup</string>
+					<key>id</key>
+					<string>200002</string>
+					<key>price</key>
+					<string>16</string>
+				</dict>
+			</array>
+		</dict>
+		<key>Complete Breakfast</key>
+		<dict>
+			<key>Items</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>All American</string>
+					<key>id</key>
+					<string>300001</string>
+					<key>price</key>
+					<string>13</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Good start breakfast</string>
+					<key>id</key>
+					<string>300002</string>
+					<key>price</key>
+					<string>16</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	<key>1002</key>
+	<dict>
+		<key>Eggs</key>
+		<dict>
+			<key>Items</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Egg white frittata</string>
+					<key>id</key>
+					<string>100001</string>
+					<key>price</key>
+					<string>14</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Custom three egg omelet</string>
+					<key>id</key>
+					<string>100002</string>
+					<key>price</key>
+					<string>10</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Steak n&apos; eggs</string>
+					<key>id</key>
+					<string>100003</string>
+					<key>price</key>
+					<string>9</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Broken egg yolk sandwich</string>
+					<key>id</key>
+					<string>100004</string>
+					<key>price</key>
+					<string>11</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Eggs Benedict</string>
+					<key>id</key>
+					<string>100005</string>
+					<key>price</key>
+					<string>13</string>
+				</dict>
+			</array>
+		</dict>
+		<key>Starters</key>
+		<dict>
+			<key>Items</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Almond granola parfait</string>
+					<key>id</key>
+					<string>200001</string>
+					<key>price</key>
+					<string>10</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Fruit Plate</string>
+					<key>id</key>
+					<string>200002</string>
+					<key>price</key>
+					<string>16</string>
+				</dict>
+			</array>
+		</dict>
+		<key>Complete Breakfast</key>
+		<dict>
+			<key>Items</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>All American</string>
+					<key>id</key>
+					<string>300001</string>
+					<key>price</key>
+					<string>13</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Good start breakfast</string>
+					<key>id</key>
+					<string>300002</string>
+					<key>price</key>
+					<string>16</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	<key>2001</key>
+	<dict>
+		<key>Eggs</key>
+		<dict>
+			<key>Items</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Egg white frittata</string>
+					<key>id</key>
+					<string>100001</string>
+					<key>price</key>
+					<string>14</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Custom three egg omelet</string>
+					<key>id</key>
+					<string>100002</string>
+					<key>price</key>
+					<string>10</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Steak n&apos; eggs</string>
+					<key>id</key>
+					<string>100003</string>
+					<key>price</key>
+					<string>9</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Broken egg yolk sandwich</string>
+					<key>id</key>
+					<string>100004</string>
+					<key>price</key>
+					<string>11</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Eggs Benedict</string>
+					<key>id</key>
+					<string>100005</string>
+					<key>price</key>
+					<string>13</string>
+				</dict>
+			</array>
+		</dict>
+		<key>Starters</key>
+		<dict>
+			<key>Items</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Almond granola parfait</string>
+					<key>id</key>
+					<string>200001</string>
+					<key>price</key>
+					<string>10</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Fruit Plate</string>
+					<key>id</key>
+					<string>200002</string>
+					<key>price</key>
+					<string>16</string>
+				</dict>
+			</array>
+		</dict>
+		<key>Complete Breakfast</key>
+		<dict>
+			<key>Items</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>All American</string>
+					<key>id</key>
+					<string>300001</string>
+					<key>price</key>
+					<string>13</string>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Good start breakfast</string>
+					<key>id</key>
+					<string>300002</string>
+					<key>price</key>
+					<string>16</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>

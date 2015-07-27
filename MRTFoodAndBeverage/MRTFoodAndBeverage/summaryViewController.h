@@ -11,4 +11,5 @@
 @interface summaryViewController : UIViewController
 - (IBAction)textFieldTouchDown:(id)sender;
 
+@property (weak, nonatomic) IBOutlet UILabel *dateTimeLabel;
 @end

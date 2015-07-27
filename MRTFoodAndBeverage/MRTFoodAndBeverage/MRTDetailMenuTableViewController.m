@@ -7,6 +7,7 @@
 //
 
 #import "MRTDetailMenuTableViewController.h"
+#import "checkOut.h"
 
 static NSString * const cellResusableIdentifier = @"titleCell";
 
@@ -21,14 +22,17 @@ static NSString * const cellResusableIdentifier = @"titleCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
     self.view.backgroundColor = [UIColor clearColor];
+    self.navigationItem.rightBarButtonItem = [[checkOut sharedManager] cartCheckoutwithTarget:self andAction:@selector(cartButtonTapped:)];
 }
+- (void) cartButtonTapped:(UIButton *)sender{
+    
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *summaryViewController = [sb instantiateViewControllerWithIdentifier:@"summaryStoryBoard"];
+    [self.navigationController pushViewController:summaryViewController animated:NO];
+    
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -111,6 +115,8 @@ static NSString * const cellResusableIdentifier = @"titleCell";
         [addToCart setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
             [addToCart addTarget:self action:@selector(addToCartClicked:) forControlEvents:UIControlEventTouchUpInside];
             [cell.contentView addSubview:addToCart];
+        
+        
 //        }
         
         
@@ -141,7 +147,7 @@ static NSString * const cellResusableIdentifier = @"titleCell";
     }
     else if(indexPath.section == 3)
     {
-        return 90;
+        return 75;
     }
     else
     {
@@ -161,14 +167,27 @@ static NSString * const cellResusableIdentifier = @"titleCell";
    NSArray *selectedRows = [self.tableView indexPathsForSelectedRows];
     
     BOOL allowedSelections = selectedRows.count <= 2;
+    BOOL allowedSelections1 = selectedRows.count <= 3;
     NSLog(@"%i", allowedSelections);
    
-          if (allowedSelections && cell.accessoryType == UITableViewCellAccessoryNone) {
-           cell.accessoryType = UITableViewCellAccessoryCheckmark;
-           cell.contentView.alpha = 0.3;
-              allowedSelections ++;
-       }
-   
+    if (indexPath.section == 0) {
+        if (allowedSelections && cell.accessoryType == UITableViewCellAccessoryNone) {
+            cell.accessoryType = UITableViewCellAccessoryCheckmark;
+            cell.contentView.alpha = 0.3;
+            allowedSelections ++;
+        }
+
+    }
+    
+      else if (indexPath.section == 1) {
+        if (allowedSelections1 && cell.accessoryType == UITableViewCellAccessoryNone) {
+            cell.accessoryType = UITableViewCellAccessoryCheckmark;
+            cell.contentView.alpha = 0.3;
+            allowedSelections1 ++;
+        }
+        
+    }
+
     
 
    }

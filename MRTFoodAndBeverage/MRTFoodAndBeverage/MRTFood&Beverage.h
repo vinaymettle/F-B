@@ -11,15 +11,13 @@
 
 @interface MRTFood_Beverage : NSObject
 
-@property (nonatomic,strong) NSString *typeOfService;
+@property (nonatomic,strong) NSDictionary *root;
+@property (nonatomic,strong) NSDictionary *typeOfService;
 @property (nonatomic,strong) UIImage *serviceImage;
-@property (nonatomic,strong) NSArray *serviceMenuCategory;
-@property (nonatomic,strong) NSArray *serviceMenuItems;
+@property (nonatomic,strong) NSDictionary *serviceMenuCategory;
+@property (nonatomic,strong) NSDictionary *serviceMenuItems;
 
-- (instancetype)initWithTypeOfServiceName:(NSString *)typeOfService
-                             serviceImage:(UIImage *)serviceImage
-                      serviceMenuCategory:(NSArray *)serviceMenuCategory
-                         serviceMenuItems:(NSArray *)serviceMenuItems;
+- (NSDictionary *) getFoodFilenames;
 
 
 @end

@@ -7,17 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F629F0151B5E55B0007B25C5 /* FoodMenu.plist in Resources */ = {isa = PBXBuildFile; fileRef = F629F0141B5E55B0007B25C5 /* FoodMenu.plist */; };
+		F62E6ADB1B6007EC00DEEE35 /* F_B.plist in Resources */ = {isa = PBXBuildFile; fileRef = F62E6ADA1B6007EC00DEEE35 /* F_B.plist */; };
+		F652A7A81B60E789005E8643 /* MRTFoodServiceRootTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F652A7A71B60E789005E8643 /* MRTFoodServiceRootTableViewController.m */; };
+		F69A4E621B66731500AFE6F8 /* FoodAndBeverageRoot_Category.plist in Resources */ = {isa = PBXBuildFile; fileRef = F69A4E611B66731500AFE6F8 /* FoodAndBeverageRoot_Category.plist */; };
+		F69A4E641B66753D00AFE6F8 /* FoodAndBeverageSubCategory.plist in Resources */ = {isa = PBXBuildFile; fileRef = F69A4E631B66753D00AFE6F8 /* FoodAndBeverageSubCategory.plist */; };
+		F69A4E661B66A36E00AFE6F8 /* FoodAndBeverageSelection.plist in Resources */ = {isa = PBXBuildFile; fileRef = F69A4E651B66A36E00AFE6F8 /* FoodAndBeverageSelection.plist */; };
 		F6B1DA881B594301005D52BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B1DA871B594301005D52BC /* main.m */; };
 		F6B1DA8B1B594301005D52BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B1DA8A1B594301005D52BC /* AppDelegate.m */; };
 		F6B1DA911B594301005D52BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6B1DA8F1B594301005D52BC /* Main.storyboard */; };
 		F6B1DA931B594301005D52BC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6B1DA921B594301005D52BC /* Images.xcassets */; };
 		F6B1DA961B594301005D52BC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6B1DA941B594301005D52BC /* LaunchScreen.xib */; };
 		F6B1DAA21B594301005D52BC /* MRTFoodAndBeverageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B1DAA11B594301005D52BC /* MRTFoodAndBeverageTests.m */; };
-		F6B1DAAE1B5943C5005D52BC /* MRTFoodServiceRootTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B1DAAD1B5943C5005D52BC /* MRTFoodServiceRootTableViewController.m */; };
 		F6B1DAB41B59446E005D52BC /* MRTFood&Beverage.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B1DAB31B59446E005D52BC /* MRTFood&Beverage.m */; };
 		F6B1DAB71B5945E6005D52BC /* MRTServiceMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B1DAB61B5945E6005D52BC /* MRTServiceMenuTableViewController.m */; };
 		F6B1DABB1B595439005D52BC /* MRTDetailMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B1DABA1B595439005D52BC /* MRTDetailMenuTableViewController.m */; };
+		F6D1BFFE1B62780100A4E612 /* checkOut.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D1BFFD1B62780100A4E612 /* checkOut.m */; };
+		F6D1C0031B62A67400A4E612 /* cart.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D1C0021B62A67400A4E612 /* cart.png */; };
 		F6D3E9DD1B5E8C2A000FA9FA /* summaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D3E9DC1B5E8C2A000FA9FA /* summaryViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F629F0141B5E55B0007B25C5 /* FoodMenu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FoodMenu.plist; sourceTree = "<group>"; };
+		F62E6ADA1B6007EC00DEEE35 /* F_B.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = F_B.plist; sourceTree = "<group>"; };
+		F652A7A71B60E789005E8643 /* MRTFoodServiceRootTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRTFoodServiceRootTableViewController.m; sourceTree = "<group>"; };
+		F69A4E611B66731500AFE6F8 /* FoodAndBeverageRoot_Category.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FoodAndBeverageRoot_Category.plist; sourceTree = "<group>"; };
+		F69A4E631B66753D00AFE6F8 /* FoodAndBeverageSubCategory.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FoodAndBeverageSubCategory.plist; sourceTree = "<group>"; };
+		F69A4E651B66A36E00AFE6F8 /* FoodAndBeverageSelection.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FoodAndBeverageSelection.plist; sourceTree = "<group>"; };
 		F6B1DA821B594301005D52BC /* MRTFoodAndBeverage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MRTFoodAndBeverage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6B1DA861B594301005D52BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6B1DA871B594301005D52BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -45,13 +54,15 @@
 		F6B1DAA01B594301005D52BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6B1DAA11B594301005D52BC /* MRTFoodAndBeverageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRTFoodAndBeverageTests.m; sourceTree = "<group>"; };
 		F6B1DAAC1B5943C5005D52BC /* MRTFoodServiceRootTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRTFoodServiceRootTableViewController.h; sourceTree = "<group>"; };
-		F6B1DAAD1B5943C5005D52BC /* MRTFoodServiceRootTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRTFoodServiceRootTableViewController.m; sourceTree = "<group>"; };
 		F6B1DAB21B59446E005D52BC /* MRTFood&Beverage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MRTFood&Beverage.h"; sourceTree = "<group>"; };
 		F6B1DAB31B59446E005D52BC /* MRTFood&Beverage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MRTFood&Beverage.m"; sourceTree = "<group>"; };
 		F6B1DAB51B5945E6005D52BC /* MRTServiceMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRTServiceMenuTableViewController.h; sourceTree = "<group>"; };
 		F6B1DAB61B5945E6005D52BC /* MRTServiceMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRTServiceMenuTableViewController.m; sourceTree = "<group>"; };
 		F6B1DAB91B595439005D52BC /* MRTDetailMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRTDetailMenuTableViewController.h; sourceTree = "<group>"; };
 		F6B1DABA1B595439005D52BC /* MRTDetailMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRTDetailMenuTableViewController.m; sourceTree = "<group>"; };
+		F6D1BFFC1B62780100A4E612 /* checkOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = checkOut.h; sourceTree = "<group>"; };
+		F6D1BFFD1B62780100A4E612 /* checkOut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = checkOut.m; sourceTree = "<group>"; };
+		F6D1C0021B62A67400A4E612 /* cart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cart.png; sourceTree = "<group>"; };
 		F6D3E9DB1B5E8C2A000FA9FA /* summaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = summaryViewController.h; sourceTree = "<group>"; };
 		F6D3E9DC1B5E8C2A000FA9FA /* summaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = summaryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,12 +108,14 @@
 			children = (
 				F6B1DAB81B5947C5005D52BC /* Resources */,
 				F6B1DAB11B5943FB005D52BC /* Model */,
+				F6B1DAAB1B594395005D52BC /* AppDelegate */,
 				F6B1DA921B594301005D52BC /* Images.xcassets */,
 				F6B1DA941B594301005D52BC /* LaunchScreen.xib */,
 				F6B1DA8F1B594301005D52BC /* Main.storyboard */,
-				F6B1DAB01B5943E1005D52BC /* Resources */,
 				F6B1DA851B594301005D52BC /* Supporting Files */,
 				F6B1DAAF1B5943D0005D52BC /* View Controller */,
+				F6D1BFFC1B62780100A4E612 /* checkOut.h */,
+				F6D1BFFD1B62780100A4E612 /* checkOut.m */,
 			);
 			path = MRTFoodAndBeverage;
 			sourceTree = "<group>";
@@ -110,10 +123,12 @@
 		F6B1DA851B594301005D52BC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F6B1DAAB1B594395005D52BC /* AppDelegate */,
-				F629F0141B5E55B0007B25C5 /* FoodMenu.plist */,
 				F6B1DA861B594301005D52BC /* Info.plist */,
 				F6B1DA871B594301005D52BC /* main.m */,
+				F62E6ADA1B6007EC00DEEE35 /* F_B.plist */,
+				F69A4E611B66731500AFE6F8 /* FoodAndBeverageRoot_Category.plist */,
+				F69A4E631B66753D00AFE6F8 /* FoodAndBeverageSubCategory.plist */,
+				F69A4E651B66A36E00AFE6F8 /* FoodAndBeverageSelection.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -148,7 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				F6B1DAAC1B5943C5005D52BC /* MRTFoodServiceRootTableViewController.h */,
-				F6B1DAAD1B5943C5005D52BC /* MRTFoodServiceRootTableViewController.m */,
+				F652A7A71B60E789005E8643 /* MRTFoodServiceRootTableViewController.m */,
 				F6B1DAB51B5945E6005D52BC /* MRTServiceMenuTableViewController.h */,
 				F6B1DAB61B5945E6005D52BC /* MRTServiceMenuTableViewController.m */,
 				F6B1DAB91B595439005D52BC /* MRTDetailMenuTableViewController.h */,
@@ -157,13 +172,6 @@
 				F6D3E9DC1B5E8C2A000FA9FA /* summaryViewController.m */,
 			);
 			name = "View Controller";
-			sourceTree = "<group>";
-		};
-		F6B1DAB01B5943E1005D52BC /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		F6B1DAB11B5943FB005D52BC /* Model */ = {
@@ -178,6 +186,7 @@
 		F6B1DAB81B5947C5005D52BC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F6D1C0021B62A67400A4E612 /* cart.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -262,8 +271,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F62E6ADB1B6007EC00DEEE35 /* F_B.plist in Resources */,
+				F69A4E621B66731500AFE6F8 /* FoodAndBeverageRoot_Category.plist in Resources */,
+				F69A4E661B66A36E00AFE6F8 /* FoodAndBeverageSelection.plist in Resources */,
+				F69A4E641B66753D00AFE6F8 /* FoodAndBeverageSubCategory.plist in Resources */,
+				F6D1C0031B62A67400A4E612 /* cart.png in Resources */,
 				F6B1DA911B594301005D52BC /* Main.storyboard in Resources */,
-				F629F0151B5E55B0007B25C5 /* FoodMenu.plist in Resources */,
 				F6B1DA961B594301005D52BC /* LaunchScreen.xib in Resources */,
 				F6B1DA931B594301005D52BC /* Images.xcassets in Resources */,
 			);
@@ -286,8 +299,9 @@
 				F6B1DA8B1B594301005D52BC /* AppDelegate.m in Sources */,
 				F6B1DABB1B595439005D52BC /* MRTDetailMenuTableViewController.m in Sources */,
 				F6D3E9DD1B5E8C2A000FA9FA /* summaryViewController.m in Sources */,
-				F6B1DAAE1B5943C5005D52BC /* MRTFoodServiceRootTableViewController.m in Sources */,
+				F6D1BFFE1B62780100A4E612 /* checkOut.m in Sources */,
 				F6B1DAB71B5945E6005D52BC /* MRTServiceMenuTableViewController.m in Sources */,
+				F652A7A81B60E789005E8643 /* MRTFoodServiceRootTableViewController.m in Sources */,
 				F6B1DA881B594301005D52BC /* main.m in Sources */,
 				F6B1DAB41B59446E005D52BC /* MRTFood&Beverage.m in Sources */,
 			);

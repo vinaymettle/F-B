@@ -7,20 +7,16 @@
 //
 
 #import "MRTFood&Beverage.h"
+#import "checkOut.h"
+NSMutableDictionary *contents;
+
 
 @implementation MRTFood_Beverage
 
-- (instancetype)initWithTypeOfServiceName:(NSString *)typeOfService serviceImage:(UIImage *)serviceImage serviceMenuCategory:(NSArray *)serviceMenuCategory serviceMenuItems:(NSArray *)serviceMenuItems
-{
-    self = [super init];
-    if (self) {
-        _typeOfService = typeOfService;
-        _serviceImage  = serviceImage;
-        _serviceMenuCategory = serviceMenuCategory;
-        _serviceMenuItems = serviceMenuItems;
-    }
-    return self;
+- (NSDictionary *) getFoodFilenames{
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"F_B" ofType:@"plist"];
+    NSMutableDictionary *fileContents = [NSMutableDictionary dictionaryWithContentsOfFile:plistPath];
+    return fileContents;
 }
-
 
 @end

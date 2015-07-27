@@ -10,6 +10,6 @@
 
 @interface MRTServiceMenuTableViewController : UITableViewController
 
-@property (nonatomic, strong)NSArray *serviceMenuItems;
+@property (nonatomic, strong)NSDictionary *serviceMenuItems;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "MRTServiceMenuTableViewController.h"
+#import "checkOut.h"
 
 static NSString * const cellReusableIdentifier = @"serviceMenuCell";
 
@@ -19,11 +20,15 @@ static NSString * const cellReusableIdentifier = @"serviceMenuCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    self.navigationItem.rightBarButtonItem = [[checkOut sharedManager] cartCheckoutwithTarget:self andAction:@selector(cartButtonTapped:)];
+
+}
+- (void) cartButtonTapped:(UIButton *)sender{
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *summaryViewController = [sb instantiateViewControllerWithIdentifier:@"summaryStoryBoard"];
+    [self.navigationController pushViewController:summaryViewController animated:NO];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -43,15 +48,8 @@ static NSString * const cellReusableIdentifier = @"serviceMenuCell";
     
     // Return the number of rows in the section.
     
-    NSInteger rowCount = 0;
-    if (section == 0) {
-        rowCount = self.serviceMenuItems.count;
-    }
-    else
-    {
-        rowCount = 1;
-    }
-    return rowCount;
+        return self.serviceMenuItems.count;
+ 
 }
 
 
@@ -62,10 +60,12 @@ static NSString * const cellReusableIdentifier = @"serviceMenuCell";
     if (!cell) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellReusableIdentifier];
     }
-    
-    if (indexPath.section == 0) {
-        cell.textLabel.text = self.serviceMenuItems[indexPath.row];
-    }
+    NSArray *menuItems = [_serviceMenuItems allValues];
+    NSString *textItemMenu = [menuItems objectAtIndex:indexPath.row];
+    cell.textLabel.lineBreakMode = NSLineBreakByCharWrapping;
+    cell.textLabel.numberOfLines = 0;
+    cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:17.0];
+    cell.textLabel.text = textItemMenu;
     
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     

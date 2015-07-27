@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>In-door Dining</string>
+		<key>id</key>
+		<string>101</string>
+		<key>Contents</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>All Day</string>
+				<key>id</key>
+				<string>1001</string>
+				<key>timings</key>
+				<string>6 am - 11 am</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Breakfast</string>
+				<key>id</key>
+				<string>1002</string>
+				<key>timings</key>
+				<string>6 am - 11 am</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Kids</string>
+				<key>id</key>
+				<string>1003</string>
+				<key>timings</key>
+				<string>6 am - 11 am</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Beverages</string>
+				<key>id</key>
+				<string>1004</string>
+				<key>timings</key>
+				<string>6 am - 11 am</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Lobby Dining</string>
+		<key>id</key>
+		<string>102</string>
+		<key>Contents</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Breakfast</string>
+				<key>id</key>
+				<string>2001</string>
+				<key>timings</key>
+				<string>6 am - 11 am</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Kids</string>
+				<key>id</key>
+				<string>2002</string>
+				<key>timings</key>
+				<string>6 am - 11 am</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Pool Dining</string>
+		<key>id</key>
+		<string>103</string>
+		<key>Contents</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Beverages</string>
+				<key>id</key>
+				<string>3001</string>
+				<key>timings</key>
+				<string>6 am - 11 am</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

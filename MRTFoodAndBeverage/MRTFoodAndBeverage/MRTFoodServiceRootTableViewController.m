@@ -10,13 +10,20 @@
 #import "MRTFoodServiceRootTableViewController.h"
 #import "MRTFood&Beverage.h"
 #import "MRTServiceMenuTableViewController.h"
+#import "checkOut.h"
 
 static NSString * const cellResusableIdentifier = @"serviceCell";
 
 @interface MRTFoodServiceRootTableViewController ()
 {
+    NSDictionary *_fileContents;
     NSArray *serviceArray;
+    NSMutableArray *tempArray;
+   
 }
+@property (nonatomic, strong) NSArray *serviceMenuCategory;
+@property (nonatomic, strong) NSArray *typeOfService;
+@property (nonatomic,strong) NSString *textServiceMenu;
 
 @end
 
@@ -25,19 +32,36 @@ static NSString * const cellResusableIdentifier = @"serviceCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    MRTFood_Beverage *FoodOrderService1 = [[ MRTFood_Beverage alloc]initWithTypeOfServiceName:@"Break Fast Menu" serviceImage:[UIImage imageNamed:@""] serviceMenuCategory:@[@"BreakFast Menu",@"Lunch Menu", @"Dinner Menu"] serviceMenuItems:@[@"Egg bendict",@"full_breakFast",@"green Tea",@"mushroom_riosott",@"green Tea"]];
+    _fileContents = [[[MRTFood_Beverage alloc]init]getFoodFilenames];
     
-     MRTFood_Beverage *FoodOrderService2 = [[ MRTFood_Beverage alloc]initWithTypeOfServiceName:@"Lunch Menu" serviceImage:[UIImage imageNamed:@""] serviceMenuCategory:@[@"CocktailBar"] serviceMenuItems:@[@"Martini",@"Vodka"]];
-    
-     MRTFood_Beverage *FoodOrderService3 = [[ MRTFood_Beverage alloc]initWithTypeOfServiceName:@"Dinner Menu" serviceImage:[UIImage imageNamed:@""] serviceMenuCategory:@[@"Welcome Menu"] serviceMenuItems:@[@"Water",@"Orange Juice",@"Refreshments"]];
-    
-    serviceArray = @[FoodOrderService1,FoodOrderService2,FoodOrderService3];
+    NSLog(@"%@",_fileContents);
     
     self.view.backgroundColor = [UIColor clearColor];
     self.view.tintColor = [UIColor clearColor];
+    self.navigationItem.rightBarButtonItem = [[checkOut sharedManager] cartCheckoutwithTarget:self andAction:@selector(cartButtonTapped:)];
+}
+
+- (void) cartButtonTapped:(UIButton *)sender{
     
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *summaryViewController = [sb instantiateViewControllerWithIdentifier:@"summaryStoryBoard"];
+    [self.navigationController pushViewController:summaryViewController animated:NO];
     
 }
+
+
+# pragma mark - Lazy Loading
+
+
+- (NSArray *)typeOfService
+{
+    if (!_typeOfService) {
+        _typeOfService = [_fileContents allKeys];
+        NSLog(@"%@", _typeOfService);
+    }
+    return _typeOfService;
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -47,28 +71,22 @@ static NSString * const cellResusableIdentifier = @"serviceCell";
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    // Return the number of sections.
-    return 3;
+    
+    return self.typeOfService.count;
 }
+
+// number of rows in section
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
     
-    NSInteger rowCount =  0;
+    return [[[_fileContents objectForKey:[_typeOfService objectAtIndex:section]]allKeys] count];
     
-    if (section == 0) {
-        rowCount = serviceArray.count;
-    }
-    if (section == 1) {
-        rowCount = 2;
-    }
-    if (section == 2) {
-        rowCount = 2;
-    }
-    return rowCount;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    // Configure Cell
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellResusableIdentifier forIndexPath:indexPath];
     
@@ -76,13 +94,16 @@ static NSString * const cellResusableIdentifier = @"serviceCell";
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellResusableIdentifier];
     }
     
-    MRTFood_Beverage *orderPlace = serviceArray[indexPath.row];
-    
-    cell.textLabel.text = orderPlace.typeOfService;
+    NSLog(@"%@",[_typeOfService objectAtIndex:indexPath.section]);
+    _serviceMenuCategory = [[_fileContents objectForKey:[_typeOfService objectAtIndex:indexPath.section]] allKeys];
+    NSLog(@"service menu category: %@",_serviceMenuCategory);
+    _textServiceMenu = [_serviceMenuCategory objectAtIndex:indexPath.row];
+    cell.textLabel.text = _textServiceMenu;
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;
 }
+
 //- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForHeaderInSection:(NSInteger)section
 //{
 //    return 50.0f;
@@ -93,7 +114,7 @@ static NSString * const cellResusableIdentifier = @"serviceCell";
     NSString *titleForHeaderSection;
     
     if (section == 0) {
-        titleForHeaderSection = @"Room Service";
+        titleForHeaderSection = @"Lobby Service";
     }
     else if (section == 1)
     {
@@ -101,7 +122,7 @@ static NSString * const cellResusableIdentifier = @"serviceCell";
     }
     else if (section == 2)
     {
-        titleForHeaderSection = @"Lobby Service";
+        titleForHeaderSection = @"Room Service";
     }
     return titleForHeaderSection;
 }
@@ -124,14 +145,16 @@ static NSString * const cellResusableIdentifier = @"serviceCell";
 {
     if ([segue.identifier isEqualToString:@"serviceMenuSegue"]) {
          UITableViewCell *cell = (UITableViewCell *)sender;
-        NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
+      //  NSIndexPath *indexPathCell = [self.tableView indexPathForCell:cell];
         
-        MRTFood_Beverage *FoodService = serviceArray[indexPath.row];
-        
-        
-        MRTServiceMenuTableViewController  *destnationViewController = (MRTServiceMenuTableViewController *)segue.destinationViewController;
-        
-        destnationViewController.serviceMenuItems = FoodService.serviceMenuItems;
+        NSIndexPath *indexPathCell = [self.tableView indexPathForSelectedRow];
+
+        MRTServiceMenuTableViewController  *destnationViewController = (MRTServiceMenuTableViewController *)segue.destinationViewController;        
+
+        destnationViewController.serviceMenuItems = [[_fileContents objectForKey:[_typeOfService objectAtIndex:indexPathCell.row]] valueForKey:cell.textLabel.text];
     }
+
+    
+
 }
 @end
